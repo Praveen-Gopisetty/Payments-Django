@@ -76,16 +76,25 @@ WSGI_APPLICATION = 'Payments_Portal.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'Payments',
+#         'USER': 'postgres',
+#         'PASSWORD': 'Infy@1234',
+#         'HOST':'localhost'
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Payments',
         'USER': 'postgres',
-        'PASSWORD': 'Infy@1234',
-        'HOST':'localhost'
+        'PASSWORD': 'admin1234',
+        'HOST':'django-aws-demo.c9yyyv7s5r2o.us-east-2.rds.amazonaws.com',
+        'PORT':'5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
